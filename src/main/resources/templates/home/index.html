@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Validado de CPF</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css"> 
+</head>
+<body>
+	<form action="/valida-cpf" method="GET" onsubmit="return validaCampos()">
+		<div class="valida-cpf">
+			<label>NOME
+				 <input type="name" name="NOME" placeholder="DIGITE SEU NOME">
+				</input>
+				 </label>
+		<div class="col-md-4">
+			   <label class="control-label" id="campo">CPF</label>
+			   <input type="text" class="form-control" name="cpf" placeholder="DIGITE SEU CPF" maxlength="14" onkeypress="formatar('###.###.###-##', this);" />
+		 </div>
+		   <button type="submit" class="btn btn-primary">Enviar</button>
+		</div>
+		</form>
+	
+</body>
+</html>
